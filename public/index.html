@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./src/main.js" type="module"></script>
+    <script src="./src/toggle.js" type="module"></script>
+    <script src="./src/howler.js" type="module"></script>
+    <script src="./src/timer.js" type="module"></script>
+</head>
+
+<body>
+    <button id="toggler">Таймер/Калькулятор</button>
+    <div id="calculator" class="hidden">
+        <form id="datecalc">
+            <h3>Калькулятор дат</h3>
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate" />
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate" />
+            </label>
+            <button type="submit">Расчитать промежуток</button>
+            <p id="datecalc__result"></p>
+        </form>
+    </div>
+    <div id="timer">
+        <h3>Таймер</h3>
+        <label>
+            <strong>Введите количество минут</strong>
+            <input type="text" name="time" id="time" value="0">
+            <button id="start">Старт</button>
+            <button id="stop">Стоп</button>
+            <div id="timer__result"></div>
+        </label>
+    </div>
+</body>
+
+</html>
