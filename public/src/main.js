@@ -1,6 +1,10 @@
 import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError } from "./utils.js";
-import "./howler.js";
+import { Howl } from "./howler.js";
+import "../style.css";
+import "./toggle.js";
+import "./timer.js";
+import "./sound.mp3";
 
 const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc__result");
